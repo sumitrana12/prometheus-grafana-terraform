@@ -41,7 +41,7 @@ A `prometheus.yml` file is provided in the repository to define scrape jobs for 
 ### Terraform Module Configuration
 ```hcl
 module "grafana_dashboard" {
-  source         = "github.com/sumitrana12/prometheus-grafana-terraform/modules/grafana_dashboard"
+  source = "git::https://github.com/sumitrana12/prometheus-grafana-terraform.git//Grafana_Dashboard?ref=main"
   folder_title   = "Windows"
   dashboard_path = "./dashboards"
   grafana_url    = "http://localhost:3000/"
@@ -52,7 +52,7 @@ module "grafana_dashboard" {
 ### Module Configuration
 ```hcl
 module "grafana_dashboard" {
-  source         = "github.com/sumitrana12/prometheus-grafana-terraform/modules/grafana_dashboard"
+  source = "git::https://github.com/sumitrana12/prometheus-grafana-terraform.git//Grafana_Dashboard?ref=main"
   folder_title   = "Windows"
   dashboard_path = "./dashboards"
   grafana_url    = "http://localhost:3000/"
